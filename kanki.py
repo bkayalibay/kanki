@@ -8,10 +8,10 @@ def random_walk(reader):
     random.shuffle(indices)
     for index in indices:
         row = rows[index]
-        kanji, hiragana, meaning = row
+        kanji, hiragana, katakana, meaning = row
         print(kanji)
         input("Press any button to continue...")
-        print(f"    {kanji} - {hiragana} - {meaning}")
+        print(f"    {kanji} - {hiragana} - {katakana} - {meaning}")
     print("")
     print("All done, good job!")
 
