@@ -10,7 +10,7 @@ kanji_or_vocab, hiragana, meaning
 九, く, , nine
 一, いち, , one
 人, じん, , person
-力, りき, , power
+力, ちから, リョク/りき, power
 川, かわ, , river
 七, しち, , seven
 十, じゅう, , ten
@@ -77,3 +77,12 @@ kanji_or_vocab, hiragana, meaning
 作る, つくる, , make/create
 朝ご飯, あさごはん, , breakfast
 同じ, おなじ, , same/identical
+彼, かれ, , he
+今, いま, , now
+勉強, べんきょう, , study
+続く, つずく, , continue/follow
+工事, こうじ, , construction
+国, くに, , country
+未だ, まだ, , yet/more
+やる, , , do
+早く, はやく, , fast/early
