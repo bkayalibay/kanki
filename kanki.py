@@ -48,7 +48,7 @@ def calculate_next_time(last_seen, next_time, history, response):
         new_next_time = max_next_time
     if new_next_time > max_next_time:
         new_next_time = max_next_time
-    return next_time
+    return new_next_time
 
 
 def random_walk(entries):
@@ -98,6 +98,7 @@ with open("database.csv", newline="") as csvfile:
     reader = csv.reader(csvfile, delimiter=",")
     rows = [row for row in reader][1:]
 
+now = datetime.datetime.today()
 if not data_path.exists():
     print(f"Could not find {data_path}. Making it now...")
     entries = []
@@ -107,8 +108,8 @@ if not data_path.exists():
         entry = {
             "id": hash(row),
             "row": row,
-            "last_seen": str(datetime.datetime.today()),
-            "next_time": str(datetime.datetime.today()),
+            "last_seen": str(now),
+            "next_time": str(now),
             "history": [],
         }
         entries.append(entry)
@@ -124,8 +125,8 @@ else:
             entry = {
                 "id": hash(row),
                 "row": row,
-                "last_seen": str(datetime.datetime.today()),
-                "next_time": str(datetime.datetime.today()),
+                "last_seen": str(now),
+                "next_time": str(now),
                 "history": [],
             }
             entries.append(entry)
