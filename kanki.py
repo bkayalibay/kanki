@@ -13,12 +13,12 @@ MASTERED = "m"
 
 easy_factor = 1.2
 good_factor = 1.5
-shift = datetime.timedelta(seconds=3 * 60 * 60)
+shift = datetime.timedelta(seconds=4 * 60 * 60)
 
 
 def dialog():
     response = input(
-        "e - easy | g - good | h - hard | a - again | m - mastered"
+        "e - easy | g - good | h - hard | a - again | m - mastered\n"
     )
     char = response[0]
     while char not in ["e", "g", "h", "a", "m"]:
