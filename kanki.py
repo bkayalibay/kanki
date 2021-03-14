@@ -11,8 +11,8 @@ HARD = "h"
 AGAIN = "a"
 MASTERED = "m"
 
-easy_factor = 1.2
-good_factor = 1.5
+easy_factor = 1.5
+good_factor = 1.2
 shift = datetime.timedelta(seconds=4 * 60 * 60)
 
 
