@@ -13,7 +13,10 @@ MASTERED = "m"
 
 easy_factor = 1.5
 good_factor = 1.2
-shift = datetime.timedelta(seconds=4 * 60 * 60)
+one_hour = datetime.timedelta(seconds=1 * 60 * 60)
+one_day = one_hour * 24
+one_month = one_day * 30
+shift = one_hour * 4
 
 
 def dialog():
@@ -35,7 +38,7 @@ def calculate_next_time(last_seen, next_time, history, response):
     min_offset = shift
     if offset < min_offset:
         offset = min_offset
-    max_next_time = next_time.replace(month=next_time.month + 1)
+    max_next_time = next_time + one_month
     if response == "e":
         new_offset = offset * easy_factor
         new_next_time = next_time + new_offset
@@ -43,7 +46,7 @@ def calculate_next_time(last_seen, next_time, history, response):
         new_offset = offset * good_factor
         new_next_time = next_time + new_offset
     elif response in ["h", "a"]:
-        new_next_time = next_time.replace(hour=next_time.hour + 6)
+        new_next_time = next_time + min_offset
     elif response == "m":
         new_next_time = max_next_time
     if new_next_time > max_next_time:
@@ -89,7 +92,7 @@ def random_walk(entries):
 
 def contains(entries, row):
     id_ = hash(row)
-    ids = [entry["id"] for entry in entries]
+    ids = [hash(tuple(entry["row"])) for entry in entries]
     return id_ in ids
 
 
