@@ -23,13 +23,11 @@ def dialog():
     response = input(
         "e - easy | g - good | h - hard | a - again | m - mastered\n"
     )
-    char = response[0]
-    while char not in ["e", "g", "h", "a", "m"]:
+    while response not in ["e", "g", "h", "a", "m"]:
         print("    Invalid response. Try again.")
         response = input(
             "e - easy | g - good | h - hard | a - again | m - mastered"
         )
-        char = response[0]
     return response
 
 
