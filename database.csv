@@ -453,7 +453,7 @@ kanji_or_vocab, kun'yomi, on'yomi, meaning
 痒い, かゆい, , itchy
 近所, きんじょ, , neighborhood
 盗難, とうなん, , theft
-熱い, あつい, , hot
+熱い, あつい, , hot(to touch)
 載せる, のせる, , to place
 皿, さら, , plate
 愛する, あいする, , to love/care for
@@ -479,3 +479,6 @@ kanji_or_vocab, kun'yomi, on'yomi, meaning
 べき, べき, , should
 かもしらない, かもしれない, , may be/perhaps
 しまった, しまった, , crikey
+数える, かぞえる, , to count
+天気, てんき, , weather
+暑い, あつい, , hot (temperature of air)
