@@ -91,7 +91,7 @@ kanji_or_vocab, kun'yomi, on'yomi, meaning
 言う, いう, , say/tell
 上司, じょうし, , boss
 一杯, いっぱい, , a cup/a drink
-一杯, 飲もう, いっぱいのもう, , let's have a drink
+一杯飲もう, いっぱいのもう, , let's have a drink
 少ない, すくない, , few/little
 雨, あめ, , rain
 行く, いく, , go
@@ -1461,3 +1461,7 @@ kanji_or_vocab, kun'yomi, on'yomi, meaning
 規則, きそく, , rule/regulation
 坂道, さかみち, , hill road
 急, きゅう, , urgent/dire/pressing
+暗い, くらい, , dark/dreary/shadowy
+東, ひがし, , east
+空, そら, , sky
+両方, りょうほう, , both
