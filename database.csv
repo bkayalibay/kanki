@@ -716,7 +716,7 @@ kanji_or_vocab, kun'yomi, on'yomi, meaning
 財布, さいふ, , purse
 出す, だす, , to take out/reveal/publish
 花, はな, , flowers
-咲いてる, さいてる, , to bloom
+咲く, さく, , to bloom/blossom
 一日, ついたち, , 1st of the month
 妻, つま, , wife
 冷たい, つめたい, , cold (to the touch)
@@ -1533,4 +1533,7 @@ kanji_or_vocab, kun'yomi, on'yomi, meaning
 笑顔, えがお, , smile
 尋ねる, たずねる, , to inquire/search for
 叩く, たたく, , to tap/hit
-割る, わる, , crack/split
+割る, わる, , to divide/crack/split
+掃除し, そうじ, , cleaning/sweeping/dusting/scrubbing
+桜, さくら, , cherry blossom
+駐車場, ちゅうしゃじょう, , parking area
